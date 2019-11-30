@@ -73,7 +73,7 @@ void quitRestart(unsigned char key, int x, int y){
 //timer function that moves pieces down every 500ms 
 void timer(int id){
     if(game.getGameOver() == true){
-        exit(0);
+        game.restart();
     }
     if(id == 0){ //beginning of game
         game.spawnFruits();
