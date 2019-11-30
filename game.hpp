@@ -15,7 +15,7 @@ class Space{
 enum Color {purple, red, green, yellow, orange};
 
 //hardcoded displacement from origin for each shape and rotation's 3 fruit blocks (no need to store origin)
-const int shapes[6][4][6] = 
+const int shapes[7][4][6] = 
 {
     {
         {-2, 0, -1, 0, 1, 0}, //I shape 
@@ -52,6 +52,12 @@ const int shapes[6][4][6] =
         {0, -1, 1, 0, 0, 1},
         {1, 0, 0, 1, -1, 0},
         {0, 1, -1, 0, 0, -1}
+    },
+    {
+        {0, -1, -1, -1, -1, 0}, //square shape
+        {0, -1, -1, -1, -1, 0},
+        {0, -1, -1, -1, -1, 0},
+        {0, -1, -1, -1, -1, 0}
     }
 };
 //class to represent the game as operated on a 10x20 grid

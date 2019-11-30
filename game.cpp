@@ -75,7 +75,7 @@ void Game::setCurrent(int x, int y){
 }
 
 void Game::spawnFruits(){
-    int shape = rand() % 6;
+    int shape = rand() % 7;
     int rotation = rand() % 4;
     Color color;
     int position = (rand() % 5) + 2; 
